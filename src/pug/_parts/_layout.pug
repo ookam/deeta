@@ -1,0 +1,20 @@
+doctype html
+html(lang="ja")
+  head
+    include /_parts/_head.pug
+    title デフォルトのタイトルです。
+    block head
+  body
+    .uk-section-primary.tm-section-texture
+      block header
+        include /_parts/_header.pug
+      block main_wrap
+        .uk-section.uk-section-small.uk-flex.uk-flex-middle.uk-text-center(uk-height-viewport="offset-top: true; offset-bottom: true")
+          block main
+            p デフォルトのコンテンツです。
+      block footer
+        include /_parts/_footer.pug
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instantclick/3.1.0/instantclick.min.js" data-no-instant></script>
+      <script data-no-instant>InstantClick.init();</script>

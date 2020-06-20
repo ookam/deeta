@@ -1,0 +1,64 @@
+@charset "UTF-8";
+body {
+  font-family: -apple-system, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3",BlinkMacSystemFont,Helvetica Neue,Segoe UI,Hiragino Kaku Gothic ProN,Hiragino Sans,ヒラギノ角ゴ ProN W3,Arial,メイリオ,Meiryo,sans-serif;
+}
+
+html .uk-button-radius {
+  border-radius: 100px !important;
+}
+
+html .uk-section-primary {
+  background: #8ec0ff;
+}
+
+html .uk-container {
+  display: flow-root;
+  box-sizing: content-box;
+  max-width: 1380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html #footer ul li a i {
+  padding-right: 4px;
+}
+
+html #header .uk-button i {
+  padding-left: 10px;
+}
+
+html #header .uk-navbar .uk-navbar-left img {
+  height: 30px;
+}
+
+html #offcanvas .uk-offcanvas-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 270px;
+  padding: 20px 20px;
+  background: #fff;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+html #offcanvas .uk-offcanvas-bar .uk-nav-header {
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e5e5;
+  color: #222 !important;
+  margin-bottom: 12px;
+}
+
+html #offcanvas .uk-offcanvas-bar a {
+  color: #444 !important;
+}
+
+html #offcanvas a {
+  padding-left: 24px;
+}
+
+html #offcanvas a i {
+  margin-left: -24px;
+  width: 24px;
+}

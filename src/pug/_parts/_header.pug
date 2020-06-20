@@ -1,0 +1,41 @@
+#header
+  uk-navbar-container.tm-navbar-container.uk-navbar-transparent.uk-sticky.uk-sticky-fixed(uk-sticky="media: 960")
+    .uk-container.uk-container-expand
+      nav.uk-navbar
+        .uk-navbar-left
+          a.uk-navbar-item.uk-logo.router-link-exact-active.uk-active(href="/")
+            img.uk-margin-small-right(src='/static/img/banner.svg')
+            |mahiro oka / website
+
+        .uk-navbar-right
+          ul.uk-navbar-nav(class="uk-visible@m")
+            li: a(href="/profile.html") Profile
+            li: a(href="/sites.html") Sites
+
+          .uk-navbar-item(class="uk-visible@m")
+            a.uk-button.uk-button-radius.uk-button-default.tm-button-default.uk-icon(href="https://twitter.com/sesere115" target="_blank")
+              | Twitter
+              i.fab.fa-twitter
+
+          a(uk-navbar-toggle-icon="" href="#offcanvas" uk-toggle="" class="uk-navbar-toggle uk-hidden@m uk-icon uk-navbar-toggle-icon")
+            svg(width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon")
+              rect(y="9" width="20" height="2")
+              rect(y="3" width="20" height="2")
+              rect(y="15" width="20" height="2")
+
+  .uk-sticky-placeholder
+
+
+
+
+#offcanvas(uk-offcanvas="mode: push; overlay: true" class="uk-offcanvas")
+  .uk-offcanvas-bar
+    .uk-panel
+      ul.uk-nav.uk-nav-default.tm-nav
+        li.uk-nav-header General
+        li: a(href="/") HOME
+        li: a(href="/profile.html") Profile
+        li: a(href="/sites.html") Sites
+        li: a(href="https://twitter.com/sesere115" target="_blank")
+          i.fab.fa-twitter
+          |Twitter

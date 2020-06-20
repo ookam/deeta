@@ -1,0 +1,16 @@
+extends /_parts/_layout.pug
+
+block main
+  .uk-width-1-1
+    .uk-container
+      p: img(src="/static/img/icon.jpg" style="width: 200px; height: 200px; border-radius: 50%")
+      p.uk-margin-medium.uk-text-lead
+        |mahiro oka / website
+        br
+        |暇な時に少しずつ作ってます
+
+      .uk-child-width-auto.uk-grid-medium.uk-flex-inline.uk-flex-center.uk-grid
+        .uk-first-column
+          a.uk-button.uk-button-radius.uk-button-primary.tm-button-primary.uk-button-large.tm-button-large(href="/profile.html") Profile
+        div
+          a.uk-button.uk-button-radius.uk-button-default.tm-button-default.uk-button-large(href="/sites.html") Sites
