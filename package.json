@@ -34,7 +34,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && cp -r public docs && git add . --all && git commit -m 'gatsby deploy' && git push -u origin master && rm -fr docs"
+    "deploy": "gatsby build && rm -fr docs && cp -r public docs && git add . --all && git commit -m 'gatsby deploy' && git push -u origin master"
   },
   "repository": {
     "type": "git",
