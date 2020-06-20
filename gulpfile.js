@@ -68,6 +68,16 @@ task('static', function () {
   );
 });
 
+//staticファイルを移動
+task('cname', function () {
+  return (
+    src("./CNAME")
+    .pipe(plumber())
+    .pipe(dest(paths.root))
+  );
+});
+
+
 //JS Compress
 task('js', function () {
   return (
@@ -113,4 +123,4 @@ task('watch', (done) => {
   done();
 });
 
-task('default', series(task('clean'), parallel('sass', 'js', 'pug', 'static'), parallel('watch', 'browser-sync')));
+task('default', series(task('clean'), parallel('sass', 'js', 'pug', 'static', 'cname'), parallel('watch', 'browser-sync')));
