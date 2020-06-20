@@ -10,9 +10,11 @@
     "gatsby-plugin-manifest": "^2.4.11",
     "gatsby-plugin-offline": "^3.2.9",
     "gatsby-plugin-react-helmet": "^3.3.4",
+    "gatsby-plugin-sass": "^2.3.4",
     "gatsby-plugin-sharp": "^2.6.11",
     "gatsby-source-filesystem": "^2.3.11",
     "gatsby-transformer-sharp": "^2.5.5",
+    "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -34,7 +36,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && rm -fr docs && cp -r public docs && git add . --all && git commit -m 'gatsby deploy' && git push -u origin master"
+    "deploy": "gatsby build && rm -fr docs && cp -r public docs && git add . --all && git commit -m '[auto]yarn run deployコマンドで送信' && git push -u origin master"
   },
   "repository": {
     "type": "git",
